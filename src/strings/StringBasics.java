@@ -2,8 +2,13 @@ package strings;
 
 public class StringBasics {
     static void main(String[] args) {
-        String s = "String is a set of characters";
-        System.out.println(s.length());
+        String s = "String";
+
+        for(int i = 0; i<s.length(); i++){
+            for(int j = i; j<s.length(); j++){
+                System.out.println(s.substring(i, j+1));
+            }
+        }
 
     }
 }
@@ -18,6 +23,10 @@ public class StringBasics {
 // string.startsWith();
 // string.endsWith();
 // string.contains();
-// string.compareTo(string2); it  compares lexographically like a dictionary;
-
-
+// stringA.compareTo(stringB); it  compares lexographically like a dictionary;
+// stringA.concat(stringB);
+// Integer.toString(string);
+// Integer.parseInt(string);
+// string.toCharArray(string);
+// string.substring(n, m);  print rest of the string after given n index. m is optional but if is there it indicates end;
+// stringA.equals(stringB);
