@@ -10,8 +10,12 @@ public class StringBasics {
             }
         }
 
+        StringBuilder sB = new StringBuilder("Optimize string");
+        System.out.println(sB);
+
     }
 }
+
 
 
 // string.charAt();
