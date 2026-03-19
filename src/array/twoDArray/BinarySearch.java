@@ -21,6 +21,15 @@ public class BinarySearch {
         }
         return false;
     }
+    static boolean withoutBinarySearch(int[][] arr, int target){
+        int row = 0, col = arr[0].length-1;
+        while(row < arr.length && col >= 0){
+            if(arr[row][col] == target) return true;
+            else if(target > arr[row][col]) row++;
+            else col--;
+        }
+        return false;
+    }
     static void main(String[] args) {
         int[][] arr= {
                 {1, 2, 3},
@@ -34,7 +43,7 @@ public class BinarySearch {
         System.out.println("Number of Elements " + arr.length * arr[0].length);
         print(arr);
         int target =5;
-        System.out.println(basicApproach(arr,target));
+        System.out.println(withoutBinarySearch(arr,target));
 
     }
 }
