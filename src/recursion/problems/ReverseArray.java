@@ -1,4 +1,4 @@
-package recursion.basics;
+package recursion.problems;
 
 public class ReverseArray {
     static int[] helper(int[] arr, int left, int right){

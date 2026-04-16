@@ -1,4 +1,4 @@
-package recursion.basics;
+package recursion.problems;
 
 public class WayToReachTheNthStair {
     static int level1(int n){

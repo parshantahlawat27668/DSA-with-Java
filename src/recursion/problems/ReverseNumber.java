@@ -1,4 +1,4 @@
-package recursion.basics;
+package recursion.problems;
 
 public class ReverseNumber {
     static int basic(int num, int rev){
